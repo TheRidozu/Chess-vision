@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Arial';
+}
+
+.container{
+    width: 1030px;
+    height: 700px;
+    display: flex;
+}
+
+.chess-board{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    width: 300px;
+    height: 700px;
+    margin-left: 30px;
+    background: #00436a2a;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.field{
+    width: 87.5px;
+    height: 87.5px;
+    cursor: pointer;
+}
+
+.black{
+    background: url("img/blackField.png");
+}
+
+.white{
+    background: url("img/whiteField.png");
+}
+
+.success{
+    background: #6c9d41;
+}
+
+.fail{
+    background:#cc3030;
+}
+
+.fieldIndex{
+    height: 90px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    padding-top: 20px;
+}
+
+.StartGame{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userSection{
+    height: 100px;
+    width: 300px;
+    display: flex;
+}
+
+.score{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.time{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.startBtn{
+    width: 235px;
+    height: 55px;
+	box-shadow:inset 0px 6px 2px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:8px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 30px;
+	font-weight:bold;
+	padding:9px 37px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #528009;
+}
+
+.watch{
+    width: 50px;
+    height: 50px;
+}
+
+.checkboxes{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+
+.checkboxes div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.checkboxes div span{
+    margin-top: 10px;
+}
+
+.successCheckbox{
+    color: #6c9d41;
+    font-weight: bold;
+
+}
+
+.failCheckbox{
+    color: #cc3030;
+    font-weight: bold;
+}
+
+.stats{
+    width: 600px;
+    height: 350px;
+    background: red;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00436a;
+    padding: 30px;
+    opacity: 0;
+    display: none;
+}
+
+.stats div{
+    width: 90%;
+    height: 85%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.stats .average{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+body .active{
+    opacity: 0.8;
+    display: block;
+}
+
+.statsBtn{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.statsBtn img{
+    width: 32px;
+    height: 32px;
+    color: white;
+}
